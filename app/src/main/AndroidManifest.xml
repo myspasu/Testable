@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anastasio_salas_ayonbenitez_1ra_aplicacion_u3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CBTis - 103 Matricula"
+        android:roundIcon="@mipmap/ftail900_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ANASTASIO_SALAS_AYONBENITEZ_1ra_APLICACION_U3">
+        <activity android:name=".Activity2"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

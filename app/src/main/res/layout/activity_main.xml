@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="15sp"
+            android:gravity="center"
+            android:text="Matricula de Cursos "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ftail900_foreground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Selecciona el Curso"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple_500">
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:id="@+id/Opcion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C++"
+                android:textColor="@color/teal_700"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Opcion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="C Sharp"
+                android:textColor="@color/teal_700"
+                android:textSize="25sp"
+                android:textStyle="bold">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Opcion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio"
+                android:textColor="@color/teal_700"
+                android:textSize="25sp"
+                android:textStyle="bold">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp">
+        
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/etPrecio"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:hint="Costo del Curso"
+            android:focusable="auto"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el Descuento:"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple_500">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/cb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Descuento 1: 5%">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/cb10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Descuento 2: 10%">
+        </CheckBox>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_700"
+            android:text="Nuevo Calculo/Clear All"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnNextP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_700"
+            android:text="Realizar Calculos"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="20sp"
+        android:paddingLeft="20sp">
+
+        <Button
+            android:id="@+id/btnGoOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Salir"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
